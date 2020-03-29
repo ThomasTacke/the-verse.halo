@@ -6,10 +6,17 @@ export const enum DEVICE {
   SONOFF = 'Sonoff'
 }
 
+export const enum SENSOR_TYPE {
+  TEMPERATURE = 'temperature',
+  HUMIDITY = 'humidity',
+  LIGHT = 'light'
+}
+
 export interface Sensor<T = any> {
   Name: string;
   Topic: string;
   Device: DEVICE;
+  Type: SENSOR_TYPE;
   Value?: Observable<T>;
 }
 
