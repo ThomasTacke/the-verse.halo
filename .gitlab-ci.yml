@@ -1,11 +1,10 @@
-docker-build:
+npm-upload:
   image: node:latest
   stage: deploy
   before_script:
-    # - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    # - mkdir -p ~/.docker/cli-plugins
-    # - mv buildx ~/.docker/cli-plugins/docker-buildx
-    # - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+    - npm config set @smart-home-the-verse:registry https://gitlab.com/api/v4/packages/npm/
+    - npm config set '//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken' "${CI_NPM_TOKEN}"
+    - npm config set '//gitlab.com/api/v4/packages/npm/:_authToken' "${CI_NPM_TOKEN}"
   script:
     - npm publish
   only:

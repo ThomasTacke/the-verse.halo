@@ -1,5 +1,5 @@
 {
-  "name": "@the-verse/the-halo",
+  "name": "@smart-home-the-verse/the-halo",
   "version": "0.0.1",
   "description": "Provices some Data Structure Classes.",
   "main": "index.ts",
@@ -23,6 +23,6 @@
   },
   "devDependencies": {},
   "publishConfig": {
-    "@the-verse:registry": "https://gitlab.com/api/v4/projects/17762366/packages/npm/"
+    "@smart-home-the-verse:registry": "https://gitlab.com/api/v4/projects/17762366/packages/npm/"
   }
 }
