@@ -1,5 +1,12 @@
 import { Observable } from 'rxjs';
 
+export const enum ICONS {
+  TEMPERATURE = 'thermometer',
+  HUMIDITY = 'water-percent',
+  LIGHTBULB_ON = 'lightbulb-on',
+  LIGHTBULB_OFF = 'lightbulb'
+}
+
 export const enum DEVICE {
   TADO = 'Tado',
   NODEMCU = 'NodeMCU',

@@ -1,6 +1,6 @@
 {
   "name": "@smart-home-the-verse/the-halo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provices some Data Structure Classes.",
   "main": "index.ts",
   "scripts": {
