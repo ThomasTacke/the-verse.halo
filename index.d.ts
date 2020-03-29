@@ -15,7 +15,7 @@ export const enum DEVICE {
 
 export interface Sensor<T = any> {
   Name: string;
-  Value: Observable<T>;
+  Value?: Observable<T>;
   Topic: string;
   Device: DEVICE;
 }

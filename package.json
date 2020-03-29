@@ -1,6 +1,6 @@
 {
   "name": "@smart-home-the-verse/the-halo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provices some Data Structure Classes.",
   "main": "index.ts",
   "scripts": {
@@ -17,11 +17,11 @@
   },
   "homepage": "https://gitlab.com/smart-home-the-verse/the-halo#readme",
   "dependencies": {
-    "rxjs": "^6.5.4",
-    "ts-node": "^8.8.1",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
     "typescript": "^3.8.3"
   },
-  "devDependencies": {},
   "publishConfig": {
     "@smart-home-the-verse:registry": "https://gitlab.com/api/v4/projects/17762366/packages/npm/"
   }
