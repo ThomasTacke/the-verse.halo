@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 export const enum DEVICE {
   TADO = 'Tado',
@@ -17,15 +17,15 @@ export interface Sensor<T = any> {
   Topic: string;
   Device: DEVICE;
   Type: SENSOR_TYPE;
-  Value?: Observable<T>;
+  Value?: BehaviorSubject<T>;
 }
 
 export interface TemperatureSensor extends Sensor<number> {
-  Value: Observable<number>;
+  Value: BehaviorSubject<number>;
 }
 
 export interface LightSensor extends Sensor<string> {
-  Value: Observable<string>;
+  Value: BehaviorSubject<string>;
 }
 
 export interface Room {
